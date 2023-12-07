@@ -52,7 +52,7 @@ const DiaryList = ({ diaryList }) => {
       }
     };
 
-    const copyList = JSON.parse(JSON.stringify(diaryList)); //JSON문자열로 반환시키고 다시 배열로 반환시켜 복사
+    const copyList = JSON.parse(JSON.stringify(diaryList));
 
     const filteredList =
       filter === 'all' ? copyList : copyList.filter((it) => filterCallBack(it));
